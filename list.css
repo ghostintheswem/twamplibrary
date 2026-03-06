@@ -1,0 +1,46 @@
+#main {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+}
+
+#work-filters {
+  grid-column: 2;
+}
+
+h2.heading,
+ol.work.index {
+  grid-column: 1;
+}
+
+/* filter section headers */
+.filters dt {
+  margin-top: 0.5em;
+}
+
+/* fake expander button */
+.filters dt.filter-toggle {
+  display: block;
+}
+
+.filters dt.filter-toggle::before {
+  content: "▸";
+  margin-right: 6px;
+  color: #666;
+}
+
+
+
+/* navigation row across the whole layout */
+.navigation.actions {
+  grid-column: 1 / 3;
+}
+
+.required-tags::before {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-image: url("banner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
